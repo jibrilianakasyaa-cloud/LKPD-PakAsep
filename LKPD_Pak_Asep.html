@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LKPD</title>
+</head>
+<body>
+  <h4>LKPD 1</h4>
+  <button onclick="lkpd1()">Latihan LKPD 1</button>
+  <div id="lkpdone"></div>
+  <h4>LKPD 2</h4>
+  <button onclick="lkpd2()">Latihan LKPD 2</button>
+<h4>LKPD 3</h4>
+  <button id="lkpd3">Latihan LKPD 3.1</button>
+  <button onclick="lkpd3v2()">Latihan LKPD 3.2</button><div id="lkpdthree"></div>
+<h4>LKPD 4</h4>
+  <button onclick="lkpd4v1()">Latihan LKPD 4.1</button>
+  <button onclick="lkpd4v2()">Latihan LKPD 4.2</button>
+<h4>LKPD 5</h4>
+  <button onclick="lkpd5()">Latihan LKPD 5.1</button><button onclick="lkpd5v2()">Latihan LKPD 5.2</button><br>
+  <div id="lkpdfive"></div>
+  <h4>LKPD 6</h4>
+  <p id="ubahw">Untuk Latihan LKPD 6</p>
+  <button onclick="lkpd6()">Latihan LKPD 6.1</button> <button onclick="balik()">Ubah balik (6.1)</button><br><br>
+  <button onclick="lkpd6v2()">Latihan LKPD 6.2</button>
+   <button onclick="rimsvek()">Hapus (6.2)</button><br>
+  <div id="gtw" style="border: 1px solid black;
+  min-height: 10px;">
+  </div>
+  <h4>LKPD 7</h4>
+  <p id="qqq">Pencet tombol maka <span id="ppp">paragraf</span> akan hilang</p>
+  <button onclick="lkpd7()">Hapus paragraf (7.1)</button>
+  <button onclick="lkpd7b()">Kembalikan lagi paragraf (7.1)</button> <br><br>
+  <button onclick="lkpd7c()">Hapus Semua paragraf(7.1)</button>
+  <button onclick="lkpd7d()">Kembalikan Semua paragraf(7.1)</button> <br><br>
+  <h4>Latihan 7.2</h4>
+  <input type="text" id="diddy" placeholder="Isi liriknya disini" oninput="lkpd7v2()">
+  <p>What is this diddyblud doing on that calculator? is blud <span id="epstein"></span>?</p>
+  <h4>LKPD 8</h4>
+  <h5>Form Pendaftaran Sederhana</h5>
+  <div id="salahjir"></div>
+ <input type="text" id="namaa" placeholder="Nama lengkap"><br><br>
+ <input type="email" id="email" placeholder="Email"><br><br>
+ <input type="password" id="password" placeholder="Kata sandi"><br><br>
+ <button onclick="lkpd8()">Daftar</button>
+  
+  <script>
+    /*Latihan LKPD 1 */
+  function lkpd1(){
+    let nama = "Jibril";
+    let umur = parseInt(prompt("Kamu berapa taun?"));
+    let angka1 = parseInt(prompt("Masukkan angka"));
+    let angka2 = parseInt(prompt("Masukkan angka ke-2"));
+    let hasil = angka2 + angka1;
+    if (isNaN(umur)){
+      document.getElementById("lkpdone").innerHTML="Umurnya pake angka yh"
+    } else {
+    document.getElementById("lkpdone").innerHTML="Nama saya " + nama + " umur kamu  " + umur + "<br>" + " " + angka1 + " + " + angka2 + "=" + hasil;
+  }
+  }
+  
+
+    
+    /* Latihan LKPD 2 */
+    function lkpd2(){
+    let nilai = parseInt(prompt("Masukkan Nilai"));
+    if (nilai >=70){
+      alert("Lulus");
+    } else if (isNaN(nilai) || nilai >=101 || nilai <=-1){
+    alert("Nilai tidak valid!");
+    } else 
+    alert("Tidak Lulus");
+    }
+
+    
+    /* Latihan LKPD 3 */
+    document.getElementById("lkpd3").addEventListener("click",function(){
+    let awal = 0;
+    for (let i = 1; i <= 10; i++){
+      awal+= i;
+    }
+    alert("1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10="+awal);
+    });
+    function lkpd3v2(){
+    for (let i=2; i <= 20; i++){
+    if (i%2===0){
+      document.getElementById("lkpdthree").innerHTML="Angka genapnya ada di console";
+      console.log(i);
+    }
+    }
+    }
+
+    
+    /*LKPD 4 Latihan */
+    function lkpd4v1() {
+     let hitungLpersegi = parseInt(prompt("Masukkan nilai sisi persegi!"));
+     let luas = hitungLpersegi**2
+     if (isNaN(hitungLpersegi)){
+       alert("Nilai harus berupa angka!");
+        } else {
+     alert("Luas persegi yang memiliki sisi " + hitungLpersegi + " adalah: " + luas + "(satuan)²");
+     }
+    }
+    
+    function lkpd4v2(){
+    let your = prompt("Siapa namamu?");
+    if (your === null || your===""){
+      alert("Uhh, siapa?");
+    } else {
+    alert("Halo " + your);
+      }
+    }
+
+    
+    /*LKPD 5 Latihan */
+    function lkpd5(){
+    let namaTeman=["Rifki"," Wafa"," Faisal"," Rizal"];
+    namaTeman.push(" Ahmad.");
+    document.getElementById("lkpdfive").innerHTML=namaTeman;
+    }
+    function lkpd5v2(){
+      /*Pastikan nilaiSiswa memiliki 6 elemen berupa number*/
+      let nilaiSiswa=[];
+      let banyakMapel=7;
+      for (i=0; i<banyakMapel; i++){
+        let isiNilai = parseInt(prompt("Masukkan nilai mapel ke-"+(i+1)));
+        nilaiSiswa.push(isiNilai);
+}
+let nilaiRata=nilaiSiswa.reduce((a, b)=> a + b, 0);
+    let diRata=nilaiRata/banyakMapel;
+      alert("Nilai rata-ratanya adalah "+diRata.toFixed(2));
+      }
+
+    
+    /*LKPD 6 Latihan*/
+    function lkpd6(){
+      document.getElementById("ubahw").style.color = "red";
+    }
+    function balik(){
+      document.getElementById("ubahw").style.color = "black";
+    }
+    function lkpd6v2(){
+    document.getElementById("gtw").innerHTML=("Please speed i need this");
+    }
+    function rimsvek(){
+      document.getElementById("gtw").innerHTML=("");
+    }
+    
+    function lkpd7(){
+      document.getElementById("ppp").innerHTML="";
+    }
+    function lkpd7b(){
+      document.getElementById("ppp").innerHTML="paragraf";
+    }
+    
+  function lkpd7c(){
+      document.getElementById("qqq").innerHTML="";
+    }
+   
+    function lkpd7d(){
+      document.getElementById("qqq").innerHTML="Pencet tombol maka <span id='ppp'>paragraf</span> akan hilang";
+    }
+    
+    function lkpd7v2(){
+      let umurnya = document.getElementById("diddy").value;
+      document.getElementById("epstein").textContent=umurnya;
+    }
+    
+    function lkpd8() {
+ let nama = document.getElementById("namaa").value;
+ let email = document.getElementById("email").value;
+ let pass = document.getElementById("password").value;
+ if (nama === "" || email === "" || pass === "") {
+ document.getElementById("salahjir").innerHTML="Semua kolom wajib diisi!";
+ } else if (pass.length < 8) {
+document.getElementById("salahjir").innerHTML="Password harus minimal 8 karakter!";
+ } else if (!email.includes("@gmail.com")) {
+ document.getElementById("salahjir").innerHTML="Email tidak valid!";
+ } else {
+ document.getElementById("salahjir").innerHTML="Pendaftaran berhasil!";
+ }
+ }
+    
+    /* LKPD 1 Refleksi
+    -Variabel adalah wadah yang menyimpan nilai atau data. Variabel penting untuk menyimpan data yang nanti akan digunakan atau diubah dalam program.
+    
+    -Contoh penggunaan sehari-hari yang mirip dengan variabel salah satunya seperti botol tupperware yang diisi dengan air, yang dimana botol adalah variabelnya dan air yang didalamnya adalah data atau isi, yang dapat diubah atau digunakan untuk apa saja.
+    */
+    
+    /*LKPD 2 Refleksi
+   -if adalah kondisi pertama dan else adalah kondisi selanjutnya jika tidak terpenuhi. else if digunakan untuk menambahkan kondisi selanjutnya jika kondisi sebelumnya tidak terpenuhi.
+  
+   -Saat saya coba, ada dua hasil, antara yang else yang jalan, atau keduanya tidak jalan.
+    */
+    
+    /*LKPD3 Refleksi
+    -gunakan for saat kamu menetapkan sampai mana perulangan berhenti, gunakan while saat kamu tidak tau kapan perulangan akan berhenti
+    
+    -menghemat waktu dan juga kode menjadi lebih pendek dan rapihh
+    */
+    
+    /*LKPD 4 Refleksi
+    -karena function dapat membuat kode bisa dipakai dimana saja, juga bisa dibuat agar berfungsi berulang kali, sehingga bisa menghemat waktu dan lebih cepat.
+    
+    -parameter itu apa yang dimasukkan ke fungsi (input), sementara return itu yang dikeluarkan dari fungsi tsb (output)
+    */
+    
+    /*LKPD 5 Refleksi
+    -Lebih pendek dan lebih cepat, tapi saat coba-coba ternyata kayaknya lebih aneh, karena 
+     ada .reduce dan yg lainnya...
+     
+    -Menggunakan for jika berupa prompt() tapi lebih simple menggunakan push()
+    */
+    
+    /*LKPD 6 Refleksi
+    -Untuk mengambil element di HTML menggunakan ID yang sama agar bisa digunakan, diubah, dll. Seperti menamai seekor anjing lalu kamu memanggilnya dengan nama yang kamu berikan, lalu kamu suruh anjing itu untuk menampilkan teks di sebuah div yang kosong :V
+    
+    -dengan manipulasi DOM, akh menggunakan innerHTML untuk menampilkan tipe data string "Please speed i need this" bisa menggunakan yg lainnya juga seperti createElement dll
+    */
+    
+    /*LKPD 7 Refleksi
+    -Onclick pada saat tombol dipencet, onmouseover saat kursor lewat tombol
+    
+    -Agar sesuatu bisa dijalankan, jika tidak menggunakan event, maka suatu fungsi tidak akan bisa dijalankan karena tidak ada "trigger" atau sesuatu yang menjadi penyebab fungsi itu berjalan
+    */
+    
+    /*LKPD 8 Refleksi
+    -Untuk mencegah hal yang tidak diinginkan, seperti mencegah virus, data sensitif, dll, juga memastikan agar data sesuai dengan keinginan. jadi validasi nge cek data yang diberikan user sebelum masuk ke server
+    
+    -Kena virus, kena hackk, error, crash, bug dll
+    */
+  </script>
+</body>
+</html>
