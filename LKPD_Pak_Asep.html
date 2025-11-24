@@ -51,14 +51,15 @@
     /*Latihan LKPD 1 */
   function lkpd1(){
     let nama = "Jibril";
-    let umur = parseInt(prompt("Kamu berapa taun?"));
+    let umur = parseInt(prompt("berapa taun?"));
     let angka1 = parseInt(prompt("Masukkan angka"));
     let angka2 = parseInt(prompt("Masukkan angka ke-2"));
     let hasil = angka2 + angka1;
     if (isNaN(umur)){
       document.getElementById("lkpdone").innerHTML="Umurnya pake angka yh"
     } else {
-    document.write("Nama saya " + nama + " umur kamu  " + umur + "<br>" + " " + angka1 + " + " + angka2 + "=" + hasil);
+alert("Umur saya " + umur);
+    document.write("Nama saya " + nama + " umur saya  " + umur + "<br>" + " " + angka1 + " + " + angka2 + "=" + hasil);
   }
   }
   
