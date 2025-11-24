@@ -7,7 +7,7 @@ function enter(){
     alert("Kamu benar!");
   } else if
     (masukan.value>5){
-      alert("1 sampe 5 tod")
+      alert("1 sampe 5 :)")
   }
     else{
       alert("Kamu salah... " + "Jawabannya adalah "+ jawa);
