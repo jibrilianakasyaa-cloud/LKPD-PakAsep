@@ -11,7 +11,8 @@
   <button onclick="lkpd1()">Latihan LKPD 1</button>
   <div id="lkpdone"></div>
   <h4>LKPD 2</h4>
-  <button onclick="lkpd2()">Latihan LKPD 2</button>
+  <button onclick="lkpd2()">Latihan LKPD 2.1</button>
+<button onclick="lkpd2v2()">Latihan LKPD 2.2</button>
 <h4>LKPD 3</h4>
   <button id="lkpd3">Latihan LKPD 3.1</button>
   <button onclick="lkpd3v2()">Latihan LKPD 3.2</button><div id="lkpdthree"></div>
@@ -73,6 +74,17 @@
     } else 
     alert("Tidak Lulus");
     }
+
+    function lkpd2v2(){
+let age = parseInt(prompt("Berapa umurmu?"));
+if (age<13){
+alert("Anak-anak");
+} else if (age>=18){
+alert("Dewasa");
+} else {
+alert("Remaja");
+}
+}
 
     
     /* Latihan LKPD 3 */
