@@ -6,8 +6,8 @@ function enter(){
   if (masukan.value==rng){
     alert("Kamu benar!");
   } else if
-    (masukan.value>5 || masukan===""){
-      alert("Isi kotaknya, dan pastikan angka hanya dari 1 sampai 5!")
+    (masukan>5 || masukan==="" || masukan<0){
+      alert("Isi kotaknya, dan/atau pastikan angka hanya dari 0 sampai 5!")
   }
     else{
       alert("Kamu salah... " + "Jawabannya adalah "+ jawa);
