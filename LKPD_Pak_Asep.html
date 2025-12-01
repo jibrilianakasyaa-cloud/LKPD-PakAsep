@@ -46,7 +46,7 @@
  <input type="email" id="email" placeholder="Email"><br><br>
  <input type="password" id="password" placeholder="Kata sandi"><br><br>
  <button onclick="lkpd8()">Daftar</button>
-  
+
   <script>
     /*Latihan LKPD 1 */
   function lkpd1(){
@@ -59,12 +59,12 @@
       document.getElementById("lkpdone").innerHTML="Umurnya pake angka yh"
     } else {
 alert("Umur saya " + umur);
-    document.write("Nama saya " + nama + " umur saya  " + umur + "<br>" + " " + angka1 + " + " + angka2 + "=" + hasil);
+    document.write("Nama saya " + nama + " umur saya  " + umur + " tahun" + "<br>" + " " + angka1 + " + " + angka2 + "=" + hasil);
   }
   }
-  
 
-    
+
+
     /* Latihan LKPD 2 */
     function lkpd2(){
     let nilai = parseInt(prompt("Masukkan Nilai"));
@@ -87,7 +87,7 @@ alert("Remaja");
 }
 }
 
-    
+
     /* Latihan LKPD 3 */
     document.getElementById("lkpd3").addEventListener("click",function(){
     let awal = 0;
@@ -105,7 +105,7 @@ alert("Remaja");
     }
     }
 
-    
+
     /*LKPD 4 Latihan */
     function lkpd4v1() {
      let hitungLpersegi = parseInt(prompt("Masukkan nilai sisi persegi!"));
@@ -116,7 +116,7 @@ alert("Remaja");
      alert("Luas persegi yang memiliki sisi " + hitungLpersegi + " adalah: " + luas + "(satuan)²");
      }
     }
-    
+
     function lkpd4v2(){
     let your = prompt("Siapa namamu?");
     if (your === null || your===""){
@@ -126,7 +126,7 @@ alert("Remaja");
       }
     }
 
-    
+
     /*LKPD 5 Latihan */
     function lkpd5(){
     let namaTeman=["Rifki"," Wafa"," Faisal"," Rizal"];
@@ -146,7 +146,7 @@ let nilaiRata=nilaiSiswa.reduce((a, b)=> a + b, 0);
       alert("Nilai rata-ratanya adalah "+diRata.toFixed(2));
       }
 
-    
+
     /*LKPD 6 Latihan*/
     function lkpd6(){
       document.getElementById("ubahw").style.color = "red";
@@ -160,27 +160,27 @@ let nilaiRata=nilaiSiswa.reduce((a, b)=> a + b, 0);
     function rimsvek(){
       document.getElementById("gtw").innerHTML=("");
     }
-    
+
     function lkpd7(){
       document.getElementById("ppp").innerHTML="";
     }
     function lkpd7b(){
       document.getElementById("ppp").innerHTML="paragraf";
     }
-    
+
   function lkpd7c(){
       document.getElementById("qqq").innerHTML="";
     }
-   
+
     function lkpd7d(){
       document.getElementById("qqq").innerHTML="Pencet tombol maka <span id='ppp'>paragraf</span> akan hilang";
     }
-    
+
     function lkpd7v2(){
       let umurnya = document.getElementById("diddy").value;
       document.getElementById("epstein").textContent=umurnya;
     }
-    
+
     function lkpd8() {
  let nama = document.getElementById("namaa").value;
  let email = document.getElementById("email").value;
@@ -195,50 +195,50 @@ document.getElementById("salahjir").innerHTML="Password harus minimal 8 karakter
  document.getElementById("salahjir").innerHTML="Pendaftaran berhasil!";
  }
  }
-    
+
     /* LKPD 1 Refleksi
     -Variabel adalah wadah yang menyimpan nilai atau data. Variabel penting untuk menyimpan data yang nanti akan digunakan atau diubah dalam program.
     
     -Contoh penggunaan sehari-hari yang mirip dengan variabel salah satunya seperti botol tupperware yang diisi dengan air, yang dimana botol adalah variabelnya dan air yang didalamnya adalah data atau isi, yang dapat diubah atau digunakan untuk apa saja.
     */
-    
+
     /*LKPD 2 Refleksi
    -if adalah kondisi pertama dan else adalah kondisi selanjutnya jika tidak terpenuhi. else if digunakan untuk menambahkan kondisi selanjutnya jika kondisi sebelumnya tidak terpenuhi.
   
    -Saat saya coba, ada dua hasil, antara yang else yang jalan, atau keduanya tidak jalan.
     */
-    
+
     /*LKPD3 Refleksi
     -gunakan for saat kamu menetapkan sampai mana perulangan berhenti, gunakan while saat kamu tidak tau kapan perulangan akan berhenti
     
     -menghemat waktu dan juga kode menjadi lebih pendek dan rapihh
     */
-    
+
     /*LKPD 4 Refleksi
     -karena function dapat membuat kode bisa dipakai dimana saja, juga bisa dibuat agar berfungsi berulang kali, sehingga bisa menghemat waktu dan lebih cepat.
     
     -parameter itu apa yang dimasukkan ke fungsi (input), sementara return itu yang dikeluarkan dari fungsi tsb (output)
     */
-    
+
     /*LKPD 5 Refleksi
     -Lebih pendek dan lebih cepat, tapi saat coba-coba ternyata kayaknya lebih aneh, karena 
      ada .reduce dan yg lainnya...
      
     -Menggunakan for jika berupa prompt() tapi lebih simple menggunakan push()
     */
-    
+
     /*LKPD 6 Refleksi
     -Untuk mengambil element di HTML menggunakan ID yang sama agar bisa digunakan, diubah, dll. Seperti menamai seekor anjing lalu kamu memanggilnya dengan nama yang kamu berikan, lalu kamu suruh anjing itu untuk menampilkan teks di sebuah div yang kosong :V
     
     -dengan manipulasi DOM, akh menggunakan innerHTML untuk menampilkan tipe data string "Please speed i need this" bisa menggunakan yg lainnya juga seperti createElement dll
     */
-    
+
     /*LKPD 7 Refleksi
     -Onclick pada saat tombol dipencet, onmouseover saat kursor lewat tombol
     
     -Agar sesuatu bisa dijalankan, jika tidak menggunakan event, maka suatu fungsi tidak akan bisa dijalankan karena tidak ada "trigger" atau sesuatu yang menjadi penyebab fungsi itu berjalan
     */
-    
+
     /*LKPD 8 Refleksi
     -Untuk mencegah hal yang tidak diinginkan, seperti mencegah virus, data sensitif, dll, juga memastikan agar data sesuai dengan keinginan. jadi validasi nge cek data yang diberikan user sebelum masuk ke server
     
