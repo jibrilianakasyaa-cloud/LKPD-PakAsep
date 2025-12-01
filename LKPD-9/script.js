@@ -1,13 +1,13 @@
 function enter(){
-  let masukan = document.getElementById("tebakan");
+  let masukan = document.getElementById("tebakan").value.trim();
   let no = [0, 1, 2, 3, 4, 5]
     let rng=Math.floor(Math.random() * no.length);
     let jawa = no[rng];
   if (masukan.value==rng){
     alert("Kamu benar!");
   } else if
-    (masukan.value>5){
-      alert("1 sampe 5 :)")
+    (masukan.value>5 || masukan===""){
+      alert("Isi kotaknya, dan pastikan angka hanya dari 1 sampai 5!")
   }
     else{
       alert("Kamu salah... " + "Jawabannya adalah "+ jawa);
