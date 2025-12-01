@@ -1,15 +1,20 @@
-function enter(){
-  let masukan = document.getElementById("tebakan").value.trim();
-  let no = [0, 1, 2, 3, 4, 5]
-    let rng=Math.floor(Math.random() * no.length);
-    let jawa = no[rng];
-  if (masukan.value==rng){
-    alert("Kamu benar!");
-  } else if
-    (masukan>5 || masukan==="" || masukan<0){
-      alert("Isi kotaknya, dan/atau pastikan angka hanya dari 0 sampai 5!")
-  }
-    else{
-      alert("Kamu salah... " + "Jawabannya adalah "+ jawa);
-  }
-}
+console.log("Hello, World!");
+document.getElementById("tes").addEventListener("click", function(){
+  let rng = Math.floor(Math.random()*101);
+  let persen = document.getElementById("persenan").innerHTML=rng + "%";
+  let nam = document.getElementById("nama").value;
+  if (nam.trim() === ""){
+    document.getElementById("hasil").innerHTML="Nama harus diisi!";
+    document.getElementById("persenan").innerHTML="";
+  } else if (rng<=5){
+    document.getElementById("hasil").innerHTML=nam+", kamu setia banget";
+  } else if (rng<=25){
+    document.getElementById("hasil").innerHTML=nam +", kamu lumayan setia!";
+  } else if (rng<=50){
+    document.getElementById("hasil").innerHTML="Bit.";
+  } else if (rng<=75){
+document.getElementById("hasil").innerHTML="Cuih, karbit lu, "+nam+".";
+  } else {
+document.getElementById("hasil").innerHTML=nam + ", kamu adalah titisan Soekarno!";
+  };
+});
