@@ -4,24 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tebak angka</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Poocubed</title>
 </head>
 <body>
-  <h3>Permainan tebak angka</h3>
-  <p>Tebak angka dari 0-5</p>
-  <input type="number" id="tebakan" maxlength="1"><br><br>
-  <button onclick="enter()">Main!</button>
-  <div id="alert"></div>
-  <!--
-  -Tantangan terbesarnya adalah memahami cara kerja array dan Math.
-
-  -Jika ada waktu lebih (atau lebih tepatnya niat lebih),
-  aku mau ngebuat ulang menjadi web "ramalan" seperti,
-  "seberapa karbit kah kamu", lalu user akan memasukkan nama
-  dan saat di enter, akan menunjukkan seperti persentase kekarbitan mu
-  dan gambar pujian/hinaan tergantung persentase kekarbitanmu
-  !-->
-  <script src="script.js"></script>
+  <h4>Cek seberapa karbit kamu!</h4>
+  <input type="text" id="nama" placeholder="Tulis nama kamu disini!">
+  <button id="tes">Test</button>
+  <p>Tingkat karbit: <span id="persenan"></span></span></p>
+  <div id="hasil"></div>
+  <script src="script.js" defer></script>
 </body>
 </html>
